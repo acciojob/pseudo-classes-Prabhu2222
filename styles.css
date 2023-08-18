@@ -1,1 +1,37 @@
 /*  your css code here. If applicable */
+:root{
+	background-color:rgb(135, 206, 235);
+}
+
+body p:first-child {
+  color: white;
+  background-color: black;
+}
+body p:nth-child(2) {
+  /* No additional styles needed, uses default text color */
+}
+
+/* Target the third paragraph */
+body p:last-child {
+  color: red;
+}
+
+
+.styled-list li {
+  background-color: gray;
+  width: 50%;
+  padding: 10px;
+}
+
+.styled-list li:nth-child(odd) {
+  background-color: white;
+}
+
+.styled-list li:first-child,
+.styled-list li:last-child {
+  font-size: 22px;
+}
+
+.styled-list li:nth-last-child(3) {
+  background-color: pink;
+}
